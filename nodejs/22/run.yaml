@@ -1,0 +1,11 @@
+include: ../../static.yaml
+
+contents:
+  packages:
+  - nodejs-22
+
+accounts:
+  run-as: nonroot
+
+entrypoint:
+  command: node

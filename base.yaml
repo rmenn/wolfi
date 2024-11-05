@@ -1,0 +1,9 @@
+include: static.yaml
+contents:
+  packages:
+    - wolfi-base
+accounts:
+  run-as: root
+
+entrypoint:
+  command: /bin/sh -l

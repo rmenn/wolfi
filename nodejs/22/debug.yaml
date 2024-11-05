@@ -1,0 +1,9 @@
+include: run.yaml
+
+contents:
+  packages:
+  - apk-tools
+  - busybox
+
+accounts:
+  run-as: root
