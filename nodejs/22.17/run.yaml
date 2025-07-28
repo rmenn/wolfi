@@ -1,0 +1,23 @@
+include: ../../static.yaml
+
+contents:
+  packages:
+    - nodejs~22.17
+
+accounts:
+  run-as: nonroot
+
+paths:
+  - path: /run/nginx
+    type: directory
+    uid: 65535
+    gid: 65535
+    permissions: 0o755
+entrypoint:
+  command: node
+cmd: --help
+
+annotations:
+  org.opencontainers.image.title: "node"
+  org.opencontainers.image.description: "Node image based on Wolfi OS"
+  org.opencontainers.image.source: "https://github.com/rmenn/wolfi/"

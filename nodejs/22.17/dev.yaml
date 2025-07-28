@@ -1,0 +1,11 @@
+include: debug.yaml
+
+contents:
+  packages:
+    - npm
+    - yarn
+    - git
+    - build-base
+
+accounts:
+  run-as: root
